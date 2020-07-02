@@ -6,7 +6,7 @@ namespace ExamenLMR
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
