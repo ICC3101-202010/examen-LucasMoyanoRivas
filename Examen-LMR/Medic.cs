@@ -20,6 +20,7 @@ namespace ExamenLMR
         {
             string name = player.GetName();
             string healing = $"Estoy curando a {name}";
+            player.heal();
             return healing;
         }
         public string GetName()

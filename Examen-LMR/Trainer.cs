@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 namespace ExamenLMR
 {
-    public class Trainer : Person
+    public class Trainer : Person, IChange
     {
         private int tactics;
 
@@ -32,6 +32,10 @@ namespace ExamenLMR
         public string GetSalary()
         {
             return salary;
+        }
+        public void OnInjuriedChange(object source, EventArgs args)
+        {
+            Console.WriteLine("Realizando cambio de jugador!");
         }
     }
 }

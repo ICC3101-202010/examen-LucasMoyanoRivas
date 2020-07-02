@@ -15,21 +15,5 @@ namespace ExamenLMR
             this.nation = nation;
             this.salary = salary;
         }
-        public string GetName()
-        {
-            return name;
-        }
-        public string GetNation()
-        {
-            return nation;
-        }
-        public int GetAge()
-        {
-            return age;
-        }
-        public string GetSalary()
-        {
-            return salary;
-        }
     }
 }

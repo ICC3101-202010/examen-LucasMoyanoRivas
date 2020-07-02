@@ -40,6 +40,8 @@
     <Compile Include="Match.cs" />
     <Compile Include="IEvaluation.cs" />
     <Compile Include="IHealing.cs" />
+    <Compile Include="IChange.cs" />
+    <Compile Include="InjuryEventArgs.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
