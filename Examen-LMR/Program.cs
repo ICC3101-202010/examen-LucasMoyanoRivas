@@ -13,11 +13,11 @@ namespace ExamenLMR
             Medic medic1 = new Medic(100, "Lia", 25, "Chile", "$20.000");
             Trainer trainer1 = new Trainer(100, "Jorge Sampaoli", 40, "Argentina", "$40.000");
             Team team1 = new Team(team11, "Chile", "Nacional", medic1, trainer1);
-            Player player1 = new Player(1, 60, 1, "Arquero", false, "Justin", 20, "Chile", "$2.000");
+            Player player1 = new Player(1, 60, 1, "Arquero", true, "Justin", 20, "Chile", "$2.000");
             Player player2 = new Player(5, 30, 3, "Defensa", false, "Andres", 20, "Chile", "$8.000");
             Player player3 = new Player(6, 40, 4, "Defensa", false, "Carlos", 20, "Chile", "$7.000");
             Player player4 = new Player(10, 20, 2, "Defensa", false, "Agustin", 20, "Chile", "$15.000");
-            Player player5 = new Player(20, 10, 7, "Mediocampista", false, "Lucas", 20, "Chile", "$20.000");
+            Player player5 = new Player(20, 10, 7, "Mediocampista", true, "Lucas", 20, "Chile", "$20.000");
             Player player6 = new Player(4, 40, 5, "Mediocampista", false, "Daslav", 20, "Chile", "$6.000");
             Player player7 = new Player(3, 30, 6, "Mediocampista", false, "Branko", 20, "Chile", "$3.000");
             Player player8 = new Player(2, 50, 8, "Mediocampista", false, "Alex", 20, "Chile", "$1.000");
@@ -110,7 +110,6 @@ namespace ExamenLMR
             {
                 Console.WriteLine("No es un partido valido");
             }
-            match.creatematch();
         }
     }
 }

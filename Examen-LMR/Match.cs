@@ -74,7 +74,7 @@ namespace ExamenLMR
         }
         public void OnInjuriedChange(object source, EventArgs args)
         {
-            Console.WriteLine("Cambio Realizado");
+            Console.WriteLine("Realizando cambio");
         }
     }
 }

@@ -10,11 +10,24 @@ namespace ExamenLMR
         {
             this.exp = exp;
         }
-        public string evaluation(Player player)
+        public void evaluation(List<Player> players)
         {
-            string name = player.GetName();
-            string evaluation = $"Estoy evaluando a {name}";
-            return evaluation;
+            Console.WriteLine("Evaluando Plantel...");
+            foreach(Player player in players)
+            {
+                if (player.GetInjury() == true)
+                {
+                    Console.WriteLine($"{player.GetName()} tiene una lesion. Voy a curarlo...");
+                    player.heal();
+                    Console.WriteLine("Jugador curado con exito");
+                }
+                else
+                {
+                    Console.WriteLine($"{player.GetName()} no tiene ninguna lesion.");
+                }
+                
+            }
+            
         }
         public string Healing(Player player)
         {

@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 namespace ExamenLMR
 {
     public interface IEvaluation
     {
-        string evaluation(Player player);
+        void evaluation(List<Player> players);
     }
 }

@@ -50,13 +50,17 @@ namespace ExamenLMR
         {
             if(injury == true)
             {
-                Console.WriteLine("Estoy Lesionado necesito un cambio!");
+                Console.WriteLine($"Yo {name} estoy lesionado y necesito un cambio!");
                 OnInjuried(injury);
             }
         }
         public void heal()
         {
             injury = false;
+        }
+        public bool GetInjury()
+        {
+            return injury;
         }
     }
 }
