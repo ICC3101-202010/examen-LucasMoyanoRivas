@@ -72,5 +72,9 @@ namespace ExamenLMR
         {
             return Teams;
         }
+        public void OnInjuriedChange(object source, EventArgs args)
+        {
+            Console.WriteLine("Cambio Realizado");
+        }
     }
 }

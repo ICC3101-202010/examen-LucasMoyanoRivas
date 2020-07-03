@@ -6,7 +6,7 @@ namespace ExamenLMR
     {
         public static void Main(string[] args)
         {
-            
+            //Solo para probar cree esto.
             List <Team> listofteams = new List<Team>();
             //Equipo1 misma nacionalidad
             List <Player> team11 = new List<Player>();
@@ -81,6 +81,8 @@ namespace ExamenLMR
             listofteams.Add(team1);
             listofteams.Add(team2);
             Match match = new Match(listofteams, 90, "2-1", "Nacional");
+            player1.Injuried += trainer1.OnInjuriedChange;
+            player1.Injuried += match.OnInjuriedChange;
             if (team1.nationteam(team1.GetTeam()) == true)
             {
                 Console.WriteLine("Es un equipo nacional");

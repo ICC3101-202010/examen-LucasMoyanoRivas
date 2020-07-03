@@ -35,7 +35,6 @@ namespace ExamenLMR
                 if (a == 1)
                 {
                     result = false;
-
                 }
                 if (a == 0)
                 {
@@ -101,7 +100,6 @@ namespace ExamenLMR
                 if (team1.Count < 12)
                 {
                     team1.Add(player);
-
                 }
             }
             return team1;
